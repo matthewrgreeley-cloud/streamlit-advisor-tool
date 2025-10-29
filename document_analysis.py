@@ -27,12 +27,14 @@ def analyze_document(file_bytes, mime_type, filename="uploaded_document"):
     """
     prompt = (
         """You are an assistant that analyzes documents.
-        Based on the uploaded document, identifiy all information needed explain and complete this document
+        Based on the uploaded document, identifiy all the information the recipient of the document may need
 
         Respond with:
-        1. what is the primary purpose of this document
-        2. who should fill out this document
-        3. a full list of all information someone would need in order to fill out the form in its entirety
+        1. What is the document
+        2. Where and when is the recipient's appointment
+        3. What should the recipient bring to their appointment
+        4. What should the recipient not bring to their appointment
+        5. How the recipient can reschedule their appointment
         """
     )
 
