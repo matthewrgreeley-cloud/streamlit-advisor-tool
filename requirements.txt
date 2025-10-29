@@ -1,0 +1,6 @@
+# Detected runtime dependencies for this project
+streamlit
+Pillow
+openai
+python-dotenv
+requests
