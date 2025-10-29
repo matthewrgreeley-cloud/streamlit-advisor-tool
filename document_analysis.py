@@ -27,12 +27,12 @@ def analyze_document(file_bytes, mime_type, filename="uploaded_document"):
     """
     prompt = (
         """You are an assistant that analyzes documents.
-        Based on the uploaded document, identifiy any risks for either party in the document.
+        Based on the uploaded document, identifiy all information needed explain and complete this document
 
         Respond with:
-        1. The type of document (administrative or criminal).
-        2. A numbered list of the issues (in simple, non-legal language).
-        You can use markdown in your reply.
+        1. what is the primary purpose of this document
+        2. who should fill out this document
+        3. a full list of all information someone would need in order to fill out the form in its entirety
         """
     )
 
